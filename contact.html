@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Contact — Perle Ronie Services</title>
+  <meta name="description" content="Téléphone, zone desservie et formulaire — contactez Perle Ronie Services en un clic." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+  <div id="site-navbar"></div>
+
+  <header class="page-hero">
+    <div class="container text-center px-3 px-sm-4">
+      <h1 class="display-5 mb-2 reveal">Contact</h1>
+      <p class="text-white-50 col-lg-8 mx-auto mb-0 reveal">Une question, un devis ou une réservation — nous vous répondons rapidement.</p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5 reveal">
+          <h2 class="h5 text-navy mb-4">Coordonnées</h2>
+          <ul class="list-unstyled text-secondary mb-4">
+            <li class="mb-3 d-flex gap-3">
+              <i class="bi bi-telephone text-gold fs-5"></i>
+              <div>
+                <div class="fw-semibold text-navy">Téléphone</div>
+                <a href="tel:+13435524446" class="text-decoration-none text-secondary">+1 (343) 552-4446</a>
+              </div>
+            </li>
+            <li class="mb-3 d-flex gap-3">
+              <i class="bi bi-clock text-gold fs-5"></i>
+              <div>
+                <div class="fw-semibold text-navy">Disponibilité</div>
+                Lun–Sam · 8h00 – 18h00<br /><span class="small">Messages hors horaires traités le jour ouvré suivant</span>
+              </div>
+            </li>
+            <li class="mb-3 d-flex gap-3">
+              <i class="bi bi-geo-alt text-gold fs-5"></i>
+              <div>
+                <div class="fw-semibold text-navy">Zone desservie</div>
+                Région métropolitaine et environs — précisez votre secteur dans le message.
+              </div>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-whatsapp text-gold fs-5"></i>
+              <div>
+                <div class="fw-semibold text-navy">WhatsApp</div>
+                <a href="https://wa.me/13435524446" class="text-gold text-decoration-none" target="_blank" rel="noopener">Ouvrir une conversation</a>
+              </div>
+            </li>
+          </ul>
+          <a class="btn btn-cta btn-lg w-100 rounded-3" href="tel:+13435524446"><i class="bi bi-telephone-outbound me-2"></i>Appeler maintenant</a>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div class="step-card p-4 p-md-5 h-100">
+            <h2 class="h5 text-navy mb-3">Formulaire</h2>
+            <div id="formSuccess" class="alert alert-success d-none" role="status">Merci ! Votre message a bien été enregistré (démo locale — branchez un envoi e-mail côté serveur pour la production).</div>
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-semibold" for="nom">Nom</label>
+                  <input class="form-control" id="nom" name="nom" type="text" required autocomplete="name" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-semibold" for="tel">Téléphone</label>
+                  <input class="form-control" id="tel" name="tel" type="tel" required autocomplete="tel" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-semibold" for="service">Service souhaité</label>
+                  <select class="form-select" id="service" name="service" required>
+                    <option value="" selected disabled>Choisir…</option>
+                    <option>Ménage / entretien</option>
+                    <option>Cuisine maison</option>
+                    <option>Les deux</option>
+                    <option>Autre / à préciser</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-semibold" for="message">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Surface, fréquence, allergies, créneaux…"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-navy w-100 py-3 rounded-3 fw-semibold border-0">Envoyer la demande</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <button type="button" class="back-to-top" aria-label="Retour en haut"><i class="bi bi-arrow-up"></i></button>
+  <a class="whatsapp-float" href="https://wa.me/13435524446" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
